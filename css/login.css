@@ -1,1 +1,111 @@
 
+@import url("style.css");
+
+.account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 620px;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #edf3e9, #fff5e5);
+}
+
+.account-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 35px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 8px 30px rgba(20, 50, 35, 0.1);
+}
+
+.account-symbol {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background-color: #edf3e9;
+    color: #174c3c;
+    font-size: 27px;
+}
+
+.account-card h1 {
+    margin: 8px 0;
+    color: #174c3c;
+    font-size: 30px;
+}
+
+.account-description {
+    margin-bottom: 25px;
+    color: #6b7771;
+    font-size: 14px;
+}
+
+.account-card form {
+    text-align: left;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d7e0d8;
+    border-radius: 6px;
+    background-color: #fffdf8;
+    font: inherit;
+}
+
+.form-field input:focus {
+    outline: 2px solid #7aa58a;
+}
+
+.account-card form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.account-switch {
+    margin-top: 22px;
+    color: #637168;
+    font-size: 14px;
+}
+
+.account-switch a {
+    color: #18704f;
+    font-weight: bold;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    color: #637168;
+    font-size: 13px;
+}
+
+.back-home:hover {
+    color: #174c3c;
+}
+
+@media (max-width: 450px) {
+    .account-card {
+        padding: 25px 20px;
+    }
+}
+
