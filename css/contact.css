@@ -1,1 +1,129 @@
 
+@import url("style.css");
+
+.contact-container {
+    padding: 50px 7% 75px;
+    background-color: #f4f7f1;
+}
+
+.contact-heading {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.contact-heading h1 {
+    margin: 10px 0;
+    color: #174c3c;
+    font-size: 40px;
+}
+
+.contact-heading > p:last-child {
+    color: #637168;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 30px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.contact-information {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #174c3c;
+    color: white;
+}
+
+.contact-information h2,
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+.contact-information > p {
+    margin-bottom: 28px;
+    color: #e0e9e1;
+}
+
+.contact-item {
+    margin-top: 25px;
+}
+
+.contact-item h3 {
+    margin-bottom: 6px;
+    color: #f0bd70;
+}
+
+.contact-item p {
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.contact-form {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(20, 50, 35, 0.08);
+}
+
+.contact-form h2 {
+    color: #174c3c;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 17px;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d7e0d8;
+    border-radius: 6px;
+    background-color: #fffdf8;
+    font: inherit;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: 2px solid #7aa58a;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.form-note {
+    margin-top: 12px;
+    color: #637168;
+    font-size: 12px;
+}
+
+@media (max-width: 750px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-heading h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-information,
+    .contact-form {
+        padding: 22px;
+    }
+}
+
