@@ -1,1 +1,89 @@
 
+@import url("style.css");
+
+.booking-container {
+    padding: 50px 20px 75px;
+    background-color: #f4f7f1;
+}
+
+.booking-intro {
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.booking-intro h1 {
+    margin: 10px 0;
+    color: #174c3c;
+    font-size: 38px;
+}
+
+.booking-intro > p:last-child {
+    color: #6b7771;
+}
+
+.booking-form {
+    max-width: 650px;
+    margin: auto;
+    padding: 32px;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(20, 50, 35, 0.08);
+}
+
+.booking-form h2 {
+    margin-bottom: 22px;
+    color: #174c3c;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d7e0d8;
+    border-radius: 6px;
+    background-color: #fffdf8;
+    font: inherit;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: 2px solid #7aa58a;
+    border-color: #174c3c;
+}
+
+.booking-form button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.form-note {
+    margin-top: 15px;
+    color: #6b7771;
+    font-size: 12px;
+}
+
+@media (max-width: 550px) {
+    .booking-intro h1 {
+        font-size: 29px;
+    }
+
+    .booking-form {
+        padding: 22px;
+    }
+}
+
